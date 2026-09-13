@@ -2,6 +2,8 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { X, LogIn, LayoutDashboard, Map as MapIcon, FolderKanban, IndianRupee, ShieldAlert, FileBarChart2 } from "lucide-react";
 import { C } from "../theme.js";
 import { useAuth } from "../context/AuthContext.jsx";
+import logo from "../assets/BhoomiDhrishti.png";
+
 
 const NAV_ITEMS = [
   { to: "dashboard", label: "Command Dashboard", icon: LayoutDashboard },
@@ -30,7 +32,7 @@ export default function MobileNav({ open, onClose }) {
       <div className="absolute left-0 top-0 bottom-0 w-72 flex flex-col" style={{ backgroundColor: C.navyDeeper }}>
         <div className="flex items-center justify-between px-4 h-16" style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
           <div className="flex items-center gap-2.5">
-            <span><img src="public/BhoomiDhrishti.png" alt="" width={250} className="rounded-2xl" /></span>
+            <span><img src={logo} alt="" width={250} className="rounded-2xl" /></span>
           </div>
           <button onClick={onClose}><X size={20} color="#fff" /></button>
         </div>

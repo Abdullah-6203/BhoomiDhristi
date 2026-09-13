@@ -37,7 +37,7 @@ export default function Sidebar({ collapsed, setCollapsed }) {
         </div>
         {!collapsed && (
           <div className="leading-tight overflow-hidden">
-            <div className="text-white text-sm font-semibold whitespace-nowrap">BhoomiSetu</div>
+            <div className="text-white text-sm font-semibold whitespace-nowrap">BhoomiDhristi</div>
             <div className="text-[11px] whitespace-nowrap" style={{ color: "rgba(255,255,255,0.55)" }}>National Land Acquisition</div>
           </div>
         )}

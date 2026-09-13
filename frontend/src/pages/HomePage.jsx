@@ -6,6 +6,8 @@ import {
 import { C, STATUS } from "../theme.js";
 import { PrimaryButton, GhostButton, Card } from "../components/ui.jsx";
 import { KPIS, PARCELS } from "../data/mockData.js";
+import logo from "../assets/BhoomiDhrishti.png";
+
 
 const PARCELS_PREVIEW = PARCELS.slice(0, 64);
 
@@ -15,7 +17,7 @@ export default function HomePage() {
       <header className="sticky top-0 z-40" style={{ backgroundColor: C.navyDeeper }}>
         <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <span><img src="public/BhoomiDhrishti.png" alt="" width={250} className="rounded-2xl" /></span>
+            <span><img src={logo} alt="" width={250} className="rounded-2xl" /></span>
           </div>
           <nav className="hidden md:flex items-center gap-7 text-sm" style={{ color: "rgba(255,255,255,0.75)" }}>
             <a href="#mission" className="hover:text-white">Mission</a>
@@ -137,7 +139,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-5">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
             <div className="flex items-center gap-2.5">
-            <span><img src="public/BhoomiDhrishti.png" alt="" width={250} className="rounded-2xl" /></span>
+            <span><img src={logo} alt="" width={250} className="rounded-2xl" /></span>
             </div>
             <div className="flex flex-wrap items-center gap-6 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
               <span className="flex items-center gap-1.5"><ShieldCheck size={13} /> WCAG 2.1 AA compliant</span>

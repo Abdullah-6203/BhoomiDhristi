@@ -34,7 +34,7 @@ export default function LoginPage() {
     <div className="min-h-screen grid md:grid-cols-2">
       <div className="hidden md:flex flex-col justify-between p-10 relative overflow-hidden" style={{ backgroundColor: C.navyDeeper }}>
         <Link to="/" className="flex items-center gap-2.5 relative z-10">
-          <span><img src="public/BhoomiDhrishti.png" alt="" width={250} className="rounded-2xl" /></span>
+          <span><img src="public/" alt="" width={250} className="rounded-2xl" /></span>
         </Link>
 
         <div className="relative z-10 max-w-sm">
